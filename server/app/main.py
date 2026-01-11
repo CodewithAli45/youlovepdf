@@ -12,7 +12,6 @@ app.add_middleware(
         "https://youlovepdf.pages.dev",
         "http://localhost:5000"
     ],
-    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
