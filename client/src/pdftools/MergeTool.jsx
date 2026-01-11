@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import API_BASE_URL from '../config';
+
 import '../styles/PDFTools.css';
 
 const MergeTool = () => {
@@ -31,7 +33,7 @@ const MergeTool = () => {
     });
 
     try {
-      const serverUrl = `http://${window.location.hostname}:8000/api/v1/pdf/merge`;
+      const serverUrl = `${API_BASE_URL}/pdf/merge`;
       const response = await fetch(serverUrl, {
         method: 'POST',
         body: formData,
